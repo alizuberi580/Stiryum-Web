@@ -22,6 +22,7 @@ const Navbar = () => {
     const navLinks: NavLink[] = [
         { id: "home", label: "Home", href: "#home" },
         { id: "features", label: "Features", href: "#features" },
+        { id: "how-it-works", label: "How It Works", href: "#how-it-works" },
         { id: "pricing", label: "Pricing", href: "#pricing" },
         { id: "faq", label: "FAQ", href: "#faq" },
     ];
@@ -86,8 +87,9 @@ const Navbar = () => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            const navbarHeight = 100; // Adjust based on your navbar height
+            const navbarHeight = 0; // Adjust based on your navbar height
             const targetPosition = targetElement.offsetTop - navbarHeight;
+            //setIsVisible(true);
 
             window.scrollTo({
                 top: targetPosition,
@@ -128,8 +130,7 @@ const Navbar = () => {
                             {link.label}
                             {/* Active indicator underline */}
                             <span
-                                className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#F37036] to-[#007DC5] transition-all duration-300 ${activeSection === link.id ? "w-full" : "w-0 group-hover:w-full"
-                                    }`}
+                                className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#F37036] to-[#007DC5] transition-all duration-300 ${activeSection === link.id ? "w-full" : "w-0 group-hover:w-full"}`}
                             ></span>
                         </a>
                     ))}
