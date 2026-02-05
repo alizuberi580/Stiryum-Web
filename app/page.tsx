@@ -4,6 +4,7 @@ import { homePage } from "../constants/data";
 import Features from "../components/sections/Features";
 import Pricing from "../components/sections/Pricing";
 import Faq from "../components/sections/Faq";
+import HowItWorks from "../components/sections/HowItWorks";
 
 const page = () => {
   return (
@@ -20,6 +21,10 @@ const page = () => {
       {/* Features Section */}
       <section id="features">
         <Features />
+      </section>
+
+      <section id="how-it-works">
+        <HowItWorks />
       </section>
 
       {/* Pricing Section */}

@@ -1,4 +1,4 @@
-
+import { Zap, Crown, Building2 } from "lucide-react";
 export const portfolioPage = {
     hero: {
         heading: "Our Portfolio",
@@ -82,7 +82,7 @@ export const homePage = {
     hero: {
         heading: "Revolutionizing hiring with",
         description:
-            "Stiryum is an AI-powered recruitment platform that uses semantic embeddings to match candidates with jobs, automate shortlisting, and streamline the entire hiring pipeline—faster, smarter, and with confidence.",
+            "AI-powered hiring that matches candidates, automates shortlisting, and streamlines recruitment.",
         changingText: [
             "AI-Powered Candidate Matching",
             "Semantic CV-to-Job Alignment",
@@ -94,3 +94,72 @@ export const homePage = {
         ],
     },
 }
+
+export const pricingPlans = [
+    {
+        name: "Free",
+        icon: Zap,
+        price: "0",
+        period: "forever",
+        //description: "Perfect for trying out AI-powered recruitment",
+        features: [
+            { text: "Up to 10 CV uploads per month", included: true },
+            { text: "5 job descriptions", included: true },
+            { text: "Basic AI matching & scoring", included: true },
+            { text: "Manual shortlisting", included: true },
+            { text: "Email support", included: true },
+            { text: "Bulk CV upload", included: false },
+            { text: "Advanced pipeline management", included: false },
+            { text: "AI JD generation chatbot", included: false },
+            { text: "Automated candidate outreach", included: false },
+            { text: "Custom branding", included: false },
+        ],
+        cta: "Start Free",
+        highlighted: false,
+        color: "from-gray-600 to-gray-700",
+    },
+    {
+        name: "Premium",
+        icon: Crown,
+        price: "99",
+        period: "per month",
+        //description: "For growing teams ready to scale their hiring",
+        features: [
+            { text: "Unlimited CV uploads", included: true },
+            { text: "Unlimited job descriptions", included: true },
+            { text: "Advanced semantic AI matching", included: true },
+            { text: "Bulk CV upload & processing", included: true },
+            { text: "AI JD generation chatbot", included: true },
+            { text: "Automated shortlisting & pipelines", included: true },
+            { text: "Candidate communication tools", included: true },
+            { text: "Priority email & chat support", included: true },
+            { text: "Analytics & reporting dashboard", included: true },
+            { text: "Custom branding", included: false },
+        ],
+        cta: "Start Premium Trial",
+        highlighted: true,
+        color: "from-[#F37036] to-[#007DC5]",
+    },
+    {
+        name: "Enterprise",
+        icon: Building2,
+        price: "Custom",
+        period: "pricing",
+        //description: "Tailored solutions for large organizations",
+        features: [
+            { text: "Everything in Premium", included: true },
+            { text: "Unlimited team members", included: true },
+            { text: "Custom AI model training", included: true },
+            { text: "Advanced bias detection & mitigation", included: true },
+            { text: "Multi-department pipelines", included: true },
+            { text: "API access & integrations", included: true },
+            { text: "Custom branding & white-labeling", included: true },
+            { text: "Dedicated account manager", included: true },
+            { text: "24/7 priority support & SLA", included: true },
+            { text: "On-premise deployment option", included: true },
+        ],
+        cta: "Contact Sales",
+        highlighted: false,
+        color: "from-purple-600 to-indigo-700",
+    },
+];
