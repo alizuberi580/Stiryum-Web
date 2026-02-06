@@ -5,6 +5,7 @@ import Features from "../components/sections/Features";
 import Pricing from "../components/sections/Pricing";
 import Faq from "../components/sections/Faq";
 import HowItWorks from "../components/sections/HowItWorks";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 const page = () => {
   return (
@@ -32,6 +33,12 @@ const page = () => {
         <Pricing />
       </section>
 
+      <section id="why-choose-us">
+        <WhyChooseUs
+          heading={homePage.whyUs.heading}
+          description={homePage.whyUs.description}
+        />
+      </section>
       {/* FAQ Section */}
       <section id="faq">
         <Faq />

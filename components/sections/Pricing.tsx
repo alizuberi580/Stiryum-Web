@@ -9,10 +9,13 @@ export default function PricingPage() {
     const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
 
     return (
-        <div className="min-h-screen bg-[#0b1120] text-white py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen text-white py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="max-w-7xl mx-auto text-center mb-16">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-[#F37036] to-[#007DC5] bg-clip-text text-transparent">
+                {/*<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-[#F37036] to-[#007DC5] bg-clip-text text-transparent">
+                    Simple, Transparent Pricing
+                </h1>*/}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#ffffff]">
                     Simple, Transparent Pricing
                 </h1>
                 {/*<p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -20,10 +23,10 @@ export default function PricingPage() {
                 </p>*/}
 
                 {/* Billing Toggle */}
-                <div className="inline-flex items-center gap-4 bg-white/5 border border-white/10 rounded-full p-1">
+                <div className="inline-flex items-center gap-3 border border-[#f1bf50] rounded-full p-1">
                     <button
                         onClick={() => setBillingCycle("monthly")}
-                        className={`px-6 py-2 rounded-full transition-all duration-300 ${billingCycle === "monthly"
+                        className={`px-3 py-1 rounded-full transition-all duration-300 ${billingCycle === "monthly"
                             ? "bg-gradient-to-r from-[#F37036] to-[#007DC5] text-white"
                             : "text-gray-400 hover:text-white"
                             }`}
@@ -32,17 +35,17 @@ export default function PricingPage() {
                     </button>
                     <button
                         onClick={() => setBillingCycle("annual")}
-                        className={`px-6 py-2 rounded-full transition-all duration-300 ${billingCycle === "annual"
+                        className={`px-3 py-1 rounded-full transition-all duration-300 ${billingCycle === "annual"
                             ? "bg-gradient-to-r from-[#F37036] to-[#007DC5] text-white"
                             : "text-gray-400 hover:text-white"
                             }`}
                     >
                         Annual
-                        <span className="ml-2 text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded-full">
-                            Save 20%
-                        </span>
                     </button>
                 </div>
+                <span className="ml-2 text-sm text-white px-2 py-1 rounded-full">
+                    Save 20% annually
+                </span>
             </div>
 
             {/* Pricing Cards */}
@@ -96,11 +99,11 @@ export default function PricingPage() {
                                         </span>
                                     )}
                                 </div>
-                                {billingCycle === "annual" && plan.price !== "$0" && plan.price !== "Custom" && (
+                                {/*billingCycle === "annual" && plan.price !== "$0" && plan.price !== "Custom" && (
                                     <p className="text-sm text-green-400 mt-2 font-medium">
                                         💰 Save ${(99 * 12 * 0.2).toFixed(0)}/year
                                     </p>
-                                )}
+                                )*/}
                             </div>
 
                             {/* Features List */}
