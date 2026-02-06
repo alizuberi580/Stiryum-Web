@@ -93,6 +93,10 @@ export const homePage = {
             "Scalable Talent Acquisition",
         ],
     },
+    whyUs: {
+        heading: "Why Choose Stiryum?",
+        description: `We find the developers, you build the future. Save your team countless interview hours and boost retention with rigorously vetted senior engineers who excel technically and culturally, delivering value from day one.`,
+    },
 }
 
 export const pricingPlans = [
@@ -141,7 +145,7 @@ export const pricingPlans = [
         color: "from-[#F37036] to-[#007DC5]",
     },
     {
-        name: "Enterprise",
+        name: "Custom",
         icon: Building2,
         price: "Custom",
         period: "pricing",

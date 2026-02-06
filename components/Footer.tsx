@@ -16,7 +16,7 @@ const Footer = () => {
                             <Image
                                 src={footerLogo}
                                 alt="Logo"
-                                className="w-28 sm:w-32 md:w-48"
+                                className="w-48 sm:w-56 md:w-64"
                                 suppressHydrationWarning={true}
                             />
                         </Link>

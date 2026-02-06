@@ -5,41 +5,41 @@ import { Upload, Sparkles, Target, Users, CheckCircle2, ArrowRight } from "lucid
 const steps = [
     {
         number: "01",
-        title: "Upload CVs in Bulk",
+        title: "Upload CVs",
         description:
-            "Simply drag and drop candidate CVs or upload them in bulk. Our AI instantly processes and extracts key information—skills, experience, education, and more—creating structured candidate profiles automatically.",
+            "Drag and drop CVs in bulk. AI instantly extracts skills, experience, and qualifications into structured profiles.",
         icon: Upload,
         color: "from-blue-500 to-cyan-500",
     },
     {
         number: "02",
-        title: "Create or Generate Job Descriptions",
+        title: "Create Job Descriptions",
         description:
-            "Upload your existing job descriptions or use our AI chatbot to generate optimized JDs in seconds. The AI understands role requirements, responsibilities, and ideal candidate profiles to create comprehensive job postings.",
+            "Upload existing JDs or use our AI chatbot to generate optimized job descriptions in minutes.",
         icon: Sparkles,
         color: "from-purple-500 to-pink-500",
     },
     {
         number: "03",
-        title: "AI Matches & Ranks Candidates",
+        title: "AI Matches Candidates",
         description:
-            "Our semantic AI transforms CVs and JDs into embeddings, understanding true skill alignment beyond keywords. Candidates are automatically scored and ranked based on relevance, experience match, and hard requirements.",
+            "Semantic AI understands true skill alignment beyond keywords. Candidates are scored and ranked automatically.",
         icon: Target,
         color: "from-[#F37036] to-[#007DC5]",
     },
     {
         number: "04",
-        title: "Shortlist & Manage Pipeline",
+        title: "Manage Pipeline",
         description:
-            "Review AI-ranked candidates, create custom shortlists, and manage your entire recruitment pipeline in one place. Move candidates through stages, add notes, and collaborate with your team seamlessly.",
+            "Review ranked candidates, create shortlists, and manage your recruitment pipeline in one place.",
         icon: Users,
         color: "from-green-500 to-emerald-500",
     },
     {
         number: "05",
-        title: "Communicate & Hire",
+        title: "Hire Faster",
         description:
-            "Reach out to top candidates directly through our platform. Send personalized emails, schedule interviews, and track all communications. Make data-driven hiring decisions with confidence and speed.",
+            "Communicate with candidates, schedule interviews, and make data-driven hiring decisions with confidence.",
         icon: CheckCircle2,
         color: "from-orange-500 to-red-500",
     },
@@ -50,15 +50,11 @@ export default function HowItWorks() {
         <div className="min-h-screen bg-black/30 text-white py-20 px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="max-w-7xl mx-auto text-center mb-20">
-                <div className="inline-flex items-center gap-2 bg-[#F37036]/10 border border-[#F37036]/20 rounded-full px-6 py-2 mb-6">
-                    <Sparkles className="w-4 h-4 text-[#F37036]" />
-                    <span className="text-sm font-semibold text-[#F37036]">Simple & Powerful</span>
-                </div>
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-[#F37036] to-[#007DC5] bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#ffffff]">
                     How Stiryum Works
                 </h1>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                    From CV upload to final hire—revolutionize your recruitment process in five simple steps
+                    Revolutionize your recruitment process in five simple steps
                 </p>
             </div>
 
