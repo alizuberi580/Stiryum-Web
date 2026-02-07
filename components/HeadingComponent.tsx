@@ -1,50 +1,59 @@
 import Reveal from "./Reveal";
+import TextCycleAnimation from "./TextCycleAnimation";
 
 type Props = {
-    className?: string;
-    headingClassName?: string;
-    heading?: string;
-    description?: string;
-    textCentered?: boolean;
-    variant?: "primary" | "secondary" | "gradient";
+  className?: string;
+  headingClassName?: string;
+  heading?: string;
+  description?: string;
+  textCentered?: boolean;
+  variant?: "primary" | "secondary" | "gradient";
+  textCycle?: string[];
 };
 
 const HeadingComponent = ({
-    className,
-    headingClassName,
-    heading,
-    description,
-    textCentered = false,
-    variant = "primary",
+  className,
+  headingClassName,
+  heading,
+  description,
+  textCentered = false,
+  variant = "primary",
+  textCycle,
 }: Props) => {
-    return (
-        <div
-            className={`${className} flex flex-col ${textCentered ? "items-center max-w-3xl mx-auto" : ""
-                } gap-4 px-4`}
+  return (
+    <div
+      className={`${className} flex flex-col ${
+        textCentered ? "items-center max-w-7xl mx-auto" : ""
+      } gap-4 px-4`}
+      data-variant={variant}
+    >
+      <Reveal className="w-full flex flex-col items-center">
+        {heading && (
+          <h1
+            className={`text-3xl md:text-5xl lg:text-7xl font-medium leading-normal silver-metal-gradient text-center ${headingClassName}`}
+          >
+            {heading}
+          </h1>
+        )}
+        {textCycle && (
+          <TextCycleAnimation
+            words={textCycle}
+            className="text-3xl md:text-5xl lg:text-7xl font-medium leading-normal silver-metal-gradient text-center"
+          />
+        )}
+      </Reveal>
+      {description && (
+        <Reveal className="w-full">
+          <p
             data-variant={variant}
-        >
-            {heading && (
-                <Reveal>
-                    <h1
-                        data-variant={variant}
-                        className={`text-2xl md:text-5xl leading-10 md:leading-relaxed font-medium text-center data-[variant=primary]:text-black data-[variant=secondary]:text-black data-[variant=gradient]:text-transparent data-[variant=gradient]:bg-clip-text data-[variant=gradient]:bg-[linear-gradient(200deg,#000_20%,#F37036_100%)] ${headingClassName}`}
-                    >
-                        {heading}
-                    </h1>
-                </Reveal>
-            )}
-            {description && (
-                <Reveal>
-                    <p
-                        data-variant={variant}
-                        className="text-center text-md md:text-xl data-[variant=primary]:text-black data-[variant=secondary]:text-white"
-                    >
-                        {description}
-                    </p>
-                </Reveal>
-            )}
-        </div>
-    );
+            className="text-center text-md md:text-xl data-[variant=primary]:text-black data-[variant=secondary]:text-white"
+          >
+            {description}
+          </p>
+        </Reveal>
+      )}
+    </div>
+  );
 };
 
 export default HeadingComponent;

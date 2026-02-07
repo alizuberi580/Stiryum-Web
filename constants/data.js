@@ -85,7 +85,6 @@ export const homePage = {
       "AI-powered hiring that matches candidates, automates shortlisting, and streamlines recruitment.",
     changingText: [
       "AI-Powered Candidate Matching",
-      "Semantic CV-to-Job Alignment",
       "Automated Shortlisting",
       "Intelligent Hiring Pipelines",
       "Bias-Aware Recruitment",

@@ -20,7 +20,7 @@ const Navbar = () => {
 
     // Navigation links for smooth scrolling
     const navLinks: NavLink[] = [
-        { id: "home", label: "Home", href: "#home" },
+        // { id: "home", label: "Home", href: "#home" },
         { id: "features", label: "Features", href: "#features" },
         { id: "how-it-works", label: "How It Works", href: "#how-it-works" },
         { id: "pricing", label: "Pricing", href: "#pricing" },
@@ -138,11 +138,11 @@ const Navbar = () => {
 
 
                 <div className="flex items-center gap-2 md:gap-4">
-                    <Link href="https://calendar.app.google/vGkWmHKibQThERD59" target="_blank">
-                        <Button className="px-2 py-2 text-md" variant="bordered">
-                            Book a Call
+                    {/* <Link href="https://calendar.app.google/vGkWmHKibQThERD59" target="_blank"> */}
+                        <Button className="px-2 py-2 text-md" variant="tertiary">
+                            Get Started
                         </Button>
-                    </Link>
+                    {/* </Link> */}
 
 
                     <div className="md:hidden">

@@ -33,12 +33,12 @@ const page = () => {
         <Pricing />
       </section>
 
-      <section id="why-choose-us">
+      {/* <section id="why-choose-us">
         <WhyChooseUs
           heading={homePage.whyUs.heading}
           description={homePage.whyUs.description}
         />
-      </section>
+      </section> */}
       {/* FAQ Section */}
       <section id="faq">
         <Faq />
