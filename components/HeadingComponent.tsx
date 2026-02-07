@@ -46,7 +46,7 @@ const HeadingComponent = ({
         <Reveal className="w-full">
           <p
             data-variant={variant}
-            className="text-center text-md md:text-xl data-[variant=primary]:text-black data-[variant=secondary]:text-white"
+            className="text-center text-md md:text-xl data-[variant=primary]:text-gray-400 data-[variant=secondary]:text-white"
           >
             {description}
           </p>
